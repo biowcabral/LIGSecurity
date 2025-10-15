@@ -1,0 +1,129 @@
+/* Header Styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(26, 26, 46, 0.95);
+  backdrop-filter: blur(10px);
+  transition: all var(--transition-normal);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header--scrolled {
+  background: var(--primary-color);
+  box-shadow: var(--shadow-lg);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-md) var(--spacing-lg);
+}
+
+/* Logo */
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  color: var(--white);
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header__logo-icon {
+  color: var(--gold-color);
+  font-size: var(--font-size-2xl);
+}
+
+.header__logo-text strong {
+  color: var(--gold-color);
+}
+
+/* Navigation */
+.header__nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.header__menu {
+  display: flex;
+  list-style: none;
+  gap: var(--spacing-xl);
+  margin: 0;
+  padding: 0;
+}
+
+.header__menu-link {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius-md);
+  transition: all var(--transition-normal);
+}
+
+.header__menu-link:hover {
+  color: var(--gold-color);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Actions */
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+
+.header__phone {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.header__phone:hover {
+  color: var(--gold-color);
+}
+
+.header__phone i {
+  color: var(--gold-color);
+}
+
+.header__cta-button {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  background: var(--gradient-accent);
+  color: var(--white);
+  border: none;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: var(--border-radius-lg);
+  font-weight: 600;
+  font-size: var(--font-size-sm);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+}
+
+.header__cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header__nav {
+    display: none;
+  }
+  
+  .header__phone span {
+    display: none;
+  }
+}

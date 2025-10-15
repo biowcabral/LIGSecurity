@@ -1,0 +1,26 @@
+/* App Styles */
+.app {
+  min-height: 100vh;
+}
+
+.main {
+  overflow-x: hidden;
+}
+
+/* Scroll Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--gray-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: var(--border-radius-sm);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
