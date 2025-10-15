@@ -1,11 +1,11 @@
 import React from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import About from './components/About';
-import Gallery from './components/Gallery';
-import JiujitsuPartner from './components/JiujitsuPartner';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Header from './components/Header.tsx';
+import Hero from './components/Hero.tsx';
+import About from './components/About.tsx';
+import Gallery from './components/Gallery.tsx';
+import JiujitsuPartner from './components/JiujitsuPartner.tsx';
+import Contact from './components/Contact.tsx';
+import Footer from './components/Footer.tsx';
 import './styles/globals.css';
 import './App.css';
 
