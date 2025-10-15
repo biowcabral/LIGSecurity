@@ -1,10 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="LIG Security - Empresa de segurança privada com serviços profissionais e tecnologia de ponta" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LIG Security - Empresa de segurança privada com serviços profissionais e tecnologia de ponta">
+    <meta name="keywords" content="segurança privada, vigilância, monitoramento, proteção, LIG Security">
     <title>LIG Security - Proteção Profissional</title>
     
     <!-- Font Awesome -->
@@ -14,9 +14,485 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="styles/main.css">
+    
+    <!-- React CDN -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <i class="fas fa-shield-alt"></i>
+                <span>LIG Security</span>
+            </div>
+            
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link active">Início</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">Sobre</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#gallery" class="nav__link">Galeria</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#jiujitsu-partner" class="nav__link">Parceiros</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">Contato</a>
+                </li>
+            </ul>
+            
+            <div class="nav__actions">
+                <a href="tel:+5511999999999" class="btn btn--outline">
+                    <i class="fas fa-phone"></i>
+                    Emergência
+                </a>
+                <button class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        <span class="hero__title-main">Proteção Profissional</span>
+                        <span class="hero__title-accent">Para Sua Empresa</span>
+                    </h1>
+                    
+                    <p class="hero__description">
+                        Serviços de segurança personalizados com tecnologia de ponta e equipe altamente qualificada. 
+                        Sua tranquilidade é nossa prioridade.
+                    </p>
+                    
+                    <div class="hero__actions">
+                        <a href="#contact" class="btn btn--primary">
+                            <i class="fas fa-comments"></i>
+                            Solicitar Orçamento
+                        </a>
+                        <a href="#about" class="btn btn--secondary">
+                            <i class="fas fa-info-circle"></i>
+                            Saiba Mais
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero__visual">
+                    <div class="hero__badge">
+                        <i class="fas fa-award"></i>
+                        <span>+15 Anos de Experiência</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="about__container container">
+                <div class="section-header">
+                    <h2 class="section-title">Sobre a LIG Security</h2>
+                    <p class="section-subtitle">
+                        Líder em soluções de segurança privada com excelência comprovada
+                    </p>
+                </div>
+                
+                <div class="about__content">
+                    <div class="about__text">
+                        <p class="about__description">
+                            A <strong>LIG Security</strong> é uma empresa especializada em segurança privada, 
+                            oferecendo soluções completas e personalizadas para empresas de todos os portes. 
+                            Nossa missão é garantir a proteção de nossos clientes através de serviços de alta qualidade.
+                        </p>
+                        
+                        <div class="about__features">
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Equipe altamente treinada</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Tecnologia de monitoramento avançada</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Atendimento 24/7</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Certificações e licenças atualizadas</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about__stats">
+                        <div class="stat">
+                            <div class="stat__number" data-target="150">0</div>
+                            <div class="stat__label">Clientes Ativos</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat__number" data-target="15">0</div>
+                            <div class="stat__label">Anos de Experiência</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat__number" data-target="24">0</div>
+                            <div class="stat__label">Horas de Atendimento</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat__number" data-target="99">0</div>
+                            <div class="stat__label">% de Satisfação</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery" id="gallery">
+            <div class="gallery__container container">
+                <div class="section-header">
+                    <h2 class="section-title">Nossa Galeria</h2>
+                    <p class="section-subtitle">
+                        Conheça nosso trabalho e equipe em ação
+                    </p>
+                </div>
+                
+                <div class="gallery__content">
+                    <div class="gallery__main">
+                        <div class="gallery__slide active" id="gallery-react-container">
+                            <!-- React Gallery Component será inserido aqui -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Jiu-Jitsu Partner Section -->
+        <section class="jiujitsu-partner" id="jiujitsu-partner">
+            <div class="jiujitsu__container container">
+                <div class="section-header">
+                    <h2 class="section-title">Academia Parceira</h2>
+                    <p class="section-subtitle">
+                        Treinamento de elite em Jiu-Jitsu para nossa equipe
+                    </p>
+                </div>
+                
+                <div class="jiujitsu__content">
+                    <div class="jiujitsu__info">
+                        <h3 class="jiujitsu__title">
+                            <i class="fas fa-fist-raised"></i>
+                            Academia Champion Jiu-Jitsu
+                        </h3>
+                        
+                        <p class="jiujitsu__description">
+                            Nossa parceria com a renomada Academia Champion Jiu-Jitsu garante que nossos 
+                            profissionais recebam treinamento de defesa pessoal de altíssimo nível, 
+                            combinando técnicas tradicionais com aplicações modernas de segurança.
+                        </p>
+                        
+                        <div class="jiujitsu__benefits">
+                            <div class="benefit">
+                                <i class="fas fa-medal"></i>
+                                <div>
+                                    <h4>Treinamento Especializado</h4>
+                                    <p>Técnicas de defesa e contenção adaptadas para segurança privada</p>
+                                </div>
+                            </div>
+                            
+                            <div class="benefit">
+                                <i class="fas fa-users"></i>
+                                <div>
+                                    <h4>Instrutores Qualificados</h4>
+                                    <p>Mestres em Jiu-Jitsu com experiência em segurança profissional</p>
+                                </div>
+                            </div>
+                            
+                            <div class="benefit">
+                                <i class="fas fa-certificate"></i>
+                                <div>
+                                    <h4>Certificação Contínua</h4>
+                                    <p>Programas regulares de atualização e certificação</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="#contact" class="btn btn--primary jiujitsu__cta">
+                            <i class="fas fa-handshake"></i>
+                            Conheça Nossa Parceria
+                        </a>
+                    </div>
+                    
+                    <div class="jiujitsu__visual">
+                        <div class="jiujitsu__badge">
+                            <i class="fas fa-trophy"></i>
+                            <span>Parceria de Elite</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="contact__container container">
+                <div class="section-header">
+                    <h2 class="section-title">Entre em Contato</h2>
+                    <p class="section-subtitle">
+                        Solicite seu orçamento personalizado
+                    </p>
+                </div>
+                
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <div class="contact__item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Telefone</h4>
+                                <p>(11) 99999-9999</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>contato@ligsecurity.com.br</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Endereço</h4>
+                                <p>São Paulo, SP - Brasil</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Atendimento</h4>
+                                <p>24 horas por dia, 7 dias por semana</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact__form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Serviço de Interesse</label>
+                            <select id="service" name="service" required>
+                                <option value="">Selecione um serviço</option>
+                                <option value="vigilancia">Vigilância Patrimonial</option>
+                                <option value="monitoramento">Monitoramento Eletrônico</option>
+                                <option value="escolta">Escolta e Transporte</option>
+                                <option value="eventos">Segurança para Eventos</option>
+                                <option value="consultoria">Consultoria em Segurança</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn--primary btn--full">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <div class="footer__brand">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>LIG Security</span>
+                    </div>
+                    <p class="footer__description">
+                        Protegendo o que é mais importante para você com profissionalismo e tecnologia de ponta.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer__section">
+                    <h4>Links Rápidos</h4>
+                    <ul class="footer__links">
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#gallery">Galeria</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h4>Serviços</h4>
+                    <ul class="footer__links">
+                        <li><a href="#">Vigilância Patrimonial</a></li>
+                        <li><a href="#">Monitoramento Eletrônico</a></li>
+                        <li><a href="#">Escolta e Transporte</a></li>
+                        <li><a href="#">Segurança para Eventos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h4>Contato</h4>
+                    <div class="footer__contact">
+                        <p>
+                            <i class="fas fa-phone"></i>
+                            (11) 99999-9999
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope"></i>
+                            contato@ligsecurity.com.br
+                        </p>
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i>
+                            São Paulo, SP
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2025 LIG Security. Todos os direitos reservados.</p>
+                <div class="footer__bottom-links">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+        
+        <button class="back-to-top" id="back-to-top" aria-label="Voltar ao topo">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <!-- JavaScript Principal -->
+    <script src="js/main.js"></script>
+    
+    <!-- React Gallery Component -->
+    <script type="text/babel">
+        const { useState, useEffect } = React;
+        
+        const ImageGallery = () => {
+            const [currentSlide, setCurrentSlide] = useState(0);
+            const [isPlaying, setIsPlaying] = useState(true);
+            
+            const images = [
+                { src: './public/images/WhatsApp Image 2025-10-15 at 11.05.25.jpeg', alt: 'Equipe LIG Security - Profissionais em ação' },
+                { src: './public/images/WhatsApp Image 2025-10-15 at 11.05.33.jpeg', alt: 'Operações de Segurança - Monitoramento' },
+                { src: './public/images/WhatsApp Image 2025-10-15 at 11.05.42.jpeg', alt: 'Treinamento da Equipe - Capacitação' },
+                { src: './public/images/WhatsApp Image 2025-10-15 at 11.05.43.jpeg', alt: 'Segurança Patrimonial - Vigilância' },
+                { src: './public/images/WhatsApp Image 2025-10-15 at 11.05.44.jpeg', alt: 'Equipe Especializada - Proteção' },
+                { src: './public/images/WhatsApp Image 2025-10-15 at 11.05.45.jpeg', alt: 'Operações Especiais - Segurança' },
+                { src: './public/images/WhatsApp Image 2025-10-15 at 11.05.46.jpeg', alt: 'Tecnologia e Segurança - Inovação' },
+                { src: './public/images/WhatsApp Image 2025-10-15 at 11.05.47.jpeg', alt: 'Profissionais Qualificados - Excelência' }
+            ];
+            
+            useEffect(() => {
+                if (isPlaying) {
+                    const interval = setInterval(() => {
+                        setCurrentSlide(prev => (prev + 1) % images.length);
+                    }, 4000);
+                    return () => clearInterval(interval);
+                }
+            }, [isPlaying, images.length]);
+            
+            const nextSlide = () => setCurrentSlide(prev => (prev + 1) % images.length);
+            const prevSlide = () => setCurrentSlide(prev => (prev - 1 + images.length) % images.length);
+            
+            return React.createElement('div', { className: 'gallery-slider' },
+                React.createElement('div', { className: 'gallery-track', style: { transform: `translateX(-${currentSlide * 100}%)` } },
+                    images.map((image, index) => 
+                        React.createElement('div', { 
+                            key: index, 
+                            className: `gallery-slide ${index === currentSlide ? 'active' : ''}` 
+                        },
+                            React.createElement('img', { 
+                                src: image.src, 
+                                alt: image.alt,
+                                onError: (e) => {
+                                    console.log('Erro ao carregar imagem:', image.src);
+                                    e.target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjUwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+CiAgPHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMCIgZmlsbD0iIzk5OSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkxJRyBTZWN1cml0eTwvdGV4dD4KICA8L3N2Zz4=';
+                                },
+                                onLoad: () => console.log('Imagem carregada:', image.src)
+                            })
+                        )
+                    )
+                ),
+                React.createElement('button', { 
+                    className: 'gallery-btn gallery-btn--prev', 
+                    onClick: prevSlide 
+                }, React.createElement('i', { className: 'fas fa-chevron-left' })),
+                React.createElement('button', { 
+                    className: 'gallery-btn gallery-btn--next', 
+                    onClick: nextSlide 
+                }, React.createElement('i', { className: 'fas fa-chevron-right' })),
+                React.createElement('div', { className: 'gallery-controls' },
+                    React.createElement('button', { 
+                        className: 'gallery-play-btn', 
+                        onClick: () => setIsPlaying(!isPlaying) 
+                    }, React.createElement('i', { className: `fas ${isPlaying ? 'fa-pause' : 'fa-play'}` })),
+                    React.createElement('div', { className: 'gallery-dots' },
+                        images.map((_, index) => 
+                            React.createElement('button', { 
+                                key: index,
+                                className: `gallery-dot ${index === currentSlide ? 'active' : ''}`,
+                                onClick: () => setCurrentSlide(index)
+                            })
+                        )
+                    )
+                )
+            );
+        };
+        
+        ReactDOM.render(React.createElement(ImageGallery), document.getElementById('gallery-react-container'));
+    </script>
+</body>
 </html>
